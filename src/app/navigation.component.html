@@ -1,0 +1,36 @@
+<app-header (toggleSidenav)="start.toggle()" [result]="10" class="md-elevation-z6" ></app-header>
+<md-sidenav-container class="sidenav-content">
+<md-sidenav class="docs-component-viewer-sidenav" #start [mode]="isOver() ? 'over' : 'side'" [opened]="!isOver()" >
+    <md-nav-list>
+   <md-list-item (click)="close()" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}"> <md-icon class="icon-position">home</md-icon><span class="text-align">Home</span></md-list-item>
+   <md-list-item (click)="close()" routerLink="video" routerLinkActive="active-link"> <md-icon class="icon-position">play_circle_outline</md-icon><span class="text-align">ScreenCast</span></md-list-item>
+   <md-list-item (click)="close()"> <md-icon class="icon-position">import_contacts</md-icon><span class="text-align">Courses</span></md-list-item>
+    <md-list-item (click)="close()"> <md-icon class="icon-position">code</md-icon><span class="text-align">Codes</span></md-list-item>
+     <md-list-item (click)="close()" routerLink="sails" routerLinkActive="active-link"> <md-icon class="icon-position">folder</md-icon><span class="text-align">Sails</span></md-list-item>
+      <md-list-item (click)="close()" routerLink="php" routerLinkActive="active-link"> <md-icon class="icon-position">folder</md-icon><span class="text-align">Php</span></md-list-item>
+       <md-list-item (click)="close()"><md-icon class="icon-position">folder</md-icon><span class="text-align">Courses</span></md-list-item>
+       <div class="nav-footer" style="width: 100%;padding-bottom: 10px;">
+       <md-divider style="padding-bottom: 10px;"></md-divider>
+       <button  md-mini-fab class="facebook" >
+      <md-icon svgIcon="facebook" style="height: 31px;"></md-icon>
+    </button>
+    <button  md-mini-fab class="google" >
+      <md-icon svgIcon="google" style="height: 31px;"></md-icon>
+    </button>
+    <button  md-mini-fab class="twitter" >
+    <md-icon svgIcon="twitter" style="height: 31px;"></md-icon>
+    </button>
+       </div>
+</md-nav-list>
+
+    </md-sidenav>
+    <div class="demo-content" style="margin:0 10px">
+  <router-outlet></router-outlet>  
+ <div
+        class="scroll_up glyphicon glyphicon-menu-up animated"
+        *ngIf="showScrollButton"
+        [ngClass]="{fadeIn:showScrollButton, fadeOut:!showScrollButton}"
+        (click)="scrollUp()">
+</div>
+    </div>
+   </md-sidenav-container>

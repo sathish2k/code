@@ -1,0 +1,15 @@
+<md-toolbar class="topnav-container md-elevation-z6">
+   <button md-icon-button (click)="toggleSidenav.emit()">
+        <md-icon class="md-24" >menu</md-icon>
+      </button>
+   <span routerLink="" style="cursor:pointer;">Cloud2torial</span>
+   <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" [class.search-expand]="expand" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton" (click)="expand?searchcollapse():searchexpand()">
+        <md-icon>search</md-icon>
+     </button>
+   </div>
+</div>
+  </md-toolbar>
+ 

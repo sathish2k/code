@@ -1,0 +1,78 @@
+.content-wrapper {
+    padding: 0px;
+}
+.detail-content-wrapper {
+    margin-top: -10px;
+    margin-bottom: 35px;
+}
+
+.course-detail-section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 30px;
+}
+
+.flex-video {
+    position: relative;
+    padding-top: 1.5625rem;
+    padding-bottom: 53.3%;
+    height: 0;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.listing-box {
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    background: #F8F8F8;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.13);
+    border: 3px solid #FFF;
+}
+ol, ul {
+    list-style: none;
+}
+ul.listing-box-list {
+    margin: 0;
+}
+
+ul.listing-box-list li {
+    border-top: 1px solid #EBEBEB;
+    padding: 13px 23px;
+    margin: 0 -3px;
+}
+.text-right {
+    text-align: right !important;
+}
+.font600 {
+    font-weight: 600 !important;
+}
+
+.course-lession-wrapper-2.alt-item-bg .course-lession-item-2 {
+    background: #F2F2F2;
+}
+style.css:1662
+a.course-lession-item-2 {
+    color: #777;
+}
+
+a, a:visited, a:focus, a:active, a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+.course-lession-item-2 {
+    display: block;
+    border: 1px solid #E5E5E5;
+    padding: 25px;
+    margin: 0 0 25px;
+}
+
+.font700 {
+    font-weight: 700 !important;
+}
+.layout-align{
+        margin: 50px 60px 50px 60px;
+    }
