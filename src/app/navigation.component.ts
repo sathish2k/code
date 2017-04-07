@@ -1,7 +1,7 @@
 import { Component, OnInit,ViewChild,HostListener } from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
 import {MdIconRegistry} from '@angular/material';
-declare var $:JQuery;
+import * as $ from 'jquery';
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
